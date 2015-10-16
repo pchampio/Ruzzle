@@ -1,3 +1,7 @@
+
+BUT
+===
+
 Il faut former le plus de mots possibles avec les seize lettres disponibles dans une grille de quatre par quatre. Les mots doivent être au moins de deux lettres, et trouvés en utilisant des lettres adjacentes les unes aux autres sans réutiliser deux fois la même case de la grille. Les formes conjuguées des verbes sont acceptées.
 
 Comme au Scrabble chaque lettre a une valeur en fonction de sa difficulté à être placée dans un mot et certaines cases sont spéciales :
