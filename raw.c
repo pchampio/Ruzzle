@@ -1,4 +1,4 @@
-#define N 4
+#define N 3
 #define M (N*N)
 #include <stdio.h>
 #include <stdlib.h>
@@ -77,14 +77,14 @@ void findWordsUtil(char mat[N][N], int visited[N][N], int i, int j, char str[M])
 	add_char_to_str(str, mat[i][j]);
 
 	// Si str is present dans le dico, alors il est print
-	if (contains(str, '$', "dico-ref-ascii-sans-accent.txt"))
+	if (contains(str, '$', "words.txt"))
 		printf("%s\n", str);
 
 	// Traverse les 8 adjacent cellules de mat[i][j]
 	int dx,dy;
 		for (dx = (i <= 0 ? 0 : -1); dx <= (i >= N-1 ? 0 : 1); dx++) {
 			for (dy = (j <= 0 ? 0 : -1); dy <= (j >= N-1 ? 0 : 1); dy++) {
-				if (!visited[dx+i][dy+j] && contains(str, '.', "dico-ref-ascii-sans-accent.txt" ) ){ // si la case n'a pas déjà été visiter et qu'il y a un mots avec ce commecement qui existe
+				if (!visited[dx+i][dy+j] && contains(str, '.', "words.txt" ) ){ // si la case n'a pas déjà été visiter et qu'il y a un mots avec ce commecement qui existe
 					findWordsUtil(mat,visited, dx+i, dy+j, str);
 				}
 			}
