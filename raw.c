@@ -21,7 +21,7 @@ struct t_element* racine = NULL;
 
 struct t_element*  create_node() {
     struct t_element *node = (struct t_element*)malloc(sizeof(struct t_element));
-		int x ;
+    int x ;
     for( x = 0;x<ALPHABET_SIZE;x++)
         node->lien_avec[x] = NULL;
     node->data = -1;
@@ -36,9 +36,9 @@ struct t_element*  create_node() {
 //         NULL    NULL       |   |  \   |
 //      NULL      NULL        r   e   x  g        --> niveau 2
 //            NULL           /    |   |
-//                          t    r   e            --> niveau 3
-//         NULL             |    |   |
-//             NULL NULL    i    r   l            --> niveau 4
+//                          t    r    e           --> niveau 3
+//         NULL             |    |    |
+//             NULL NULL    i    r    l           --> niveau 4
 //      NULL       NULL     |    |
 //         NULL NULL        n    e                --> niveau 5
 
@@ -67,7 +67,7 @@ void insert_node(char character[MAX_LENGHT]) {
             // et on cree un autre t_element qui va pointer vers (node->lien_avec[index] du dessus)
             node->lien_avec[index] = create_node();  // qui est : struct t_element* suivant = create_node(); node->lien_avec[index] = suivant;
         }
-
+        // on rentre dans la lettre crée pour en crée une nouvelle
         node = node->lien_avec[index];
     }
     // a la fin de l'arbre node->data est égal à la longeur du mot
@@ -117,8 +117,8 @@ void sub_char_to_str(char string[M]){
 }
 
 // https://fr.wikipedia.org/wiki/Fr%C3%A9quence_d%27apparition_des_lettres_en_fran%C3%A7ais
-char distLetter() {
-	  rand();
+char distLetter(){
+    rand();
     int x = rand() % 15833;
     if(x < 1209) return 'a';
     if(x < 1510) return 'b';
@@ -145,8 +145,7 @@ char distLetter() {
     if(x < 15452) return 'w';
     if(x < 15499) return 'x';
     if(x < 15757) return 'y';
-    if(x < 15833) return 'z';
-
+    return 'z';
 }
 
 void gener_gril(char mat[N][N]){
@@ -174,8 +173,7 @@ void findWordsUtil(char mat[N][N], int visited[N][N], int i, int j, char str[M])
 	int dx,dy;
 		for (dx = (i <= 0 ? 0 : -1); dx <= (i >= N-1 ? 0 : 1); dx++) {
 			for (dy = (j <= 0 ? 0 : -1); dy <= (j >= N-1 ? 0 : 1); dy++) {
-				if (!visited[dx+i][dy+j] ){ // si la case n'a pas déjà été visiter et qu'il y a un mots avec ce commecement qui existe  && contains(str, '.', "words.txt" )
-				// && (isfind == -2 || isfind == strlen(str))
+				if (!visited[dx+i][dy+j] ){
 					findWordsUtil(mat,visited, dx+i, dy+j, str);
 				}
 			}
@@ -199,30 +197,6 @@ void findWords(char mat[N][N]){
 				findWordsUtil(mat, visited, i, j, str);
 	}
 
-}
-
-int contains(char grep_obj[M], char EndFlag[1], char File[100]){
-		char command[100];
-		sprintf(command, "grep \"^%s%c\" %s > tmp", grep_obj, EndFlag, File);
-
-		// if (EndFlag == '$' ) {  //debug
-		// 	printf("find --> \"%s\"\n", grep_obj);
-		// }
-		system(command);
-
-		char character[20];
-		FILE * fic;
-		fic = fopen("tmp","r");
-
-		if(fic != NULL){
-			fscanf(fic,"%s",character);
-			if(!feof(fic)){
-				fclose(fic);
-				return 1;
-			}
-		}
-		fclose(fic);
-		return 0;
 }
 
 int main(){
@@ -252,6 +226,6 @@ int main(){
 
 
 	findWords(grille);
-
+    printf(" \n");
 	return 0;
 }
