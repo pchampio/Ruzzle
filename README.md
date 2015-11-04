@@ -20,4 +20,5 @@ _Makefile_
 make -size=3
 ```
 pour une grille de 3*3
+
 default size = 4
