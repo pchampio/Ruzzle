@@ -21,15 +21,16 @@ make size=3 // Pour une grille de 3*3
 ```
 
 default size = 4
-
+----
 ```
 bin\main.exe
 ```
 
 Pour exe le programme
-
+---
 ```
 make clean
 ```
 
 Pour se rm les fichier execulable --> version propre
+---
