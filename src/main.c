@@ -16,25 +16,10 @@ int main(){
 	gener_gril(grille);
 	affic_mat(grille);
 
-	char character[MAX_LENGHT];
-	FILE * fic;
-	fic = fopen("data/words.txt","r");
-
-	if(fic != NULL){
-
-			fscanf(fic,"%s",character);
-			printf("creation d'un arbre prefixer de : %s ",character);
-			while(!feof(fic)){
-					insert_node(character);
-					// printf("%s\n",character);
-					fscanf(fic,"%s",character);
-
-			}
-			printf("--> %s\n",character);
-	}
-	fclose(fic);
+	creeTrie();
 
 	findWords(grille);
   printf(" \n");
+	affic_mat(grille);
 	return 0;
 }

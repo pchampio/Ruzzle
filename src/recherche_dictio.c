@@ -87,3 +87,22 @@ int search(char character[MAX_LENGHT]) {
 		}
     return -1;
 }
+void creeTrie(){
+  char character[MAX_LENGHT];
+  FILE * fic;
+  fic = fopen("data/words.txt","r");
+
+  if(fic != NULL){
+
+      fscanf(fic,"%s",character);
+      printf("creation d'un arbre prefixer de : %s ",character);
+      while(!feof(fic)){
+          insert_node(character);
+          // printf("%s\n",character);
+          fscanf(fic,"%s",character);
+
+      }
+      printf("--> %s\n",character);
+  }
+  fclose(fic);
+}
