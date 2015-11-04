@@ -15,22 +15,21 @@ _Makefile_
 	les fichiers entêtes (.h) sont dans ./include
 	creation d'un fichier ./bin où l'exécutable est compiler
 
-**Choisire la taille de la grille**
+**Fonction Make**
 ```
 make size=3 // Pour une grille de 3*3
 ```
 
 default size = 4
-----
+
 ```
 bin\main.exe
 ```
 
 Pour exe le programme
----
+
 ```
 make clean
 ```
 
 Pour se rm les fichier execulable --> version propre
----
