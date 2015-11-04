@@ -1,15 +1,11 @@
-#define N 4
-#define M (N*N)
-#define ALPHABET_SIZE 26
-#define  MAX_LENGHT 20
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+#include "../include/recherche_grille.h"
+#include "../include/str_perso.h"
+#include "../include/recherche_dictio.h"
 
-#include "str_perso.h"
-#include "recherche_dictio.h"
 
 // une fonction recursive qui print les mots présent dans la matrise
 void findWordsUtil(char mat[N][N], int visited[N][N], int i, int j, char str[M]){
@@ -19,9 +15,10 @@ void findWordsUtil(char mat[N][N], int visited[N][N], int i, int j, char str[M])
 	add_char_to_str(str, mat[i][j]);
 	int isfind = search(str);
 	// Si str is present dans le dico, alors il est print
-
-	if (isfind == strlen(str))
+	if (isfind == strlen(str)){
 		printf("%s / ", str);
+	}
+
 
 	// Traverse les 8 adjacent cellules de mat[i][j]
 	int dx,dy;
@@ -47,8 +44,10 @@ void findWords(char mat[N][N]){
 	int i,j;
 	// point de depart
 	for (i=0; i<N; i++){
-		for (j=0; j<N; j++)
-				findWordsUtil(mat, visited, i, j, str);
+		for (j=0; j<N; j++){
+			findWordsUtil(mat, visited, i, j, str);
+		}
+
 	}
 
 }

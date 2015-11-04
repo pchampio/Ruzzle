@@ -1,15 +1,9 @@
-#define N 4
-#define M (N*N)
-#define ALPHABET_SIZE 26
-#define  MAX_LENGHT 20
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-
-#include "str_perso.h"
-
+#include "../include/recherche_dictio.h"
 
 struct t_element {
     int data;
@@ -26,27 +20,27 @@ struct t_element*  create_node() {
     node->data = -1;
     return node;
 }
-
-//                			      racine
-//                            /   \     \
-//    NULL    NULL            m   p      g        --> niveau 0
-//      NULL     NULL         |   |      |
-//     NULL      NULL         a   i      a        --> niveau 1
-//         NULL    NULL       |   |  \   |
-//      NULL      NULL        r   e   x  g        --> niveau 2
-//            NULL           /    |   |
-//                          t    r    e           --> niveau 3
-//         NULL             |    |    |
-//             NULL NULL    i    r    l           --> niveau 4
-//      NULL       NULL     |    |
-//         NULL NULL        n    e                --> niveau 5
+/*                                racine
+ *                               /   \     \
+ *                               m   p      g        --> niveau 0
+ *                               |   |      |
+ *                               a   i      a        --> niveau 1
+ *                               |   |  \   |
+ *                               r   e   x  g        --> niveau 2
+ *                              /    |   |
+ *                             t    r    e           --> niveau 3
+ *                             |    |    |
+ *                             i    r    l           --> niveau 4
+ *                             |    |
+ *                             n    e                --> niveau 5
+ */
 
 // caractères sont implicitement définis par index
 
 
 // c'est comme une file où on ajoute un nœud à la fin de la liste
-// on traverse, (node = node->lien_avec[index] au lieu de node = node->lien_avec) jusnodeu'a  node->lien_avec[index] == NULL (au lieu de node->lien_avec == NULL)
-// nodeuand on atteint NULL, au lieu d'ajoute 1 t_element et faire pointer celuis avent au nouveau, on cree plusieurs t_element (nouvelle lettres de alphaBet)
+// on traverse, (node = node->lien_avec[index] au lieu de node = node->lien_avec) jusqu'a  node->lien_avec[index] == NULL (au lieu de node->lien_avec == NULL)
+// quand on atteint NULL, au lieu d'ajoute 1 t_element et faire pointer celuis avent au nouveau, on cree plusieurs t_element (nouvelle lettres de alphaBet)
 // où là valeur est égal au niveau (en bas) donc la longeur d'un mot.
 void insert_node(char character[MAX_LENGHT]) {
     int length = strlen(character);
@@ -59,7 +53,7 @@ void insert_node(char character[MAX_LENGHT]) {
     for(level = 0 ; level < length; level++) {
         // pour chaques level trouver l'index correspondant
         // characters (a-z = 0-26)
-        int index = character[level] - 'a';
+        index = character[level] - 'a';
 
         if(node->lien_avec[index] == NULL) {
             // mettre la valeur de ce charactersdans node->lien_avec[index]

@@ -1,15 +1,9 @@
-#define N 4
-#define M (N*N)
-#define ALPHABET_SIZE 26
-#define  MAX_LENGHT 20
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-
 #include <time.h>
-#include "str_perso.h"
+
+#include "../include/gener_grille.h"
 
 
 /* Affiche une matrice */

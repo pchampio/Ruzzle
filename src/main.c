@@ -1,17 +1,13 @@
-#define N 4
-#define M (N*N)
-#define ALPHABET_SIZE 26
-#define  MAX_LENGHT 20
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
+#include "../include/str_perso.h"
+#include "../include/gener_grille.h"
+#include "../include/recherche_dictio.h"
+#include "../include/recherche_grille.h"
 
-#include "gener_grille.h"
-#include "recherche_dictio.h"
-#include "recherche_grille.h"
-#include "str_perso.h"
 
 int main(){
 
@@ -22,7 +18,7 @@ int main(){
 
 	char character[MAX_LENGHT];
 	FILE * fic;
-	fic = fopen("./words.txt","r");
+	fic = fopen("data/words.txt","r");
 
 	if(fic != NULL){
 
@@ -38,8 +34,7 @@ int main(){
 	}
 	fclose(fic);
 
-
 	findWords(grille);
-    printf(" \n");
+  printf(" \n");
 	return 0;
 }
