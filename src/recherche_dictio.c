@@ -75,6 +75,7 @@ int search(char character[MAX_LENGHT]) {
     for(level = 0 ; level < length; level++) {
         index = character[level] - 'a';
         if(node->lien_avec[index] != NULL){
+          // printf("%i - is word %i\n",  index ,node->data);
 					node = node->lien_avec[index];
 				}else{
 					break;
@@ -85,6 +86,9 @@ int search(char character[MAX_LENGHT]) {
 		if(character[level] == '\0' && node->data != -1){
 			return node->data;
 		}
+    if (length == level && node->data == -1) {
+      return -2;
+    }
     return -1;
 }
 void creeTrie(){

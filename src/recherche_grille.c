@@ -56,7 +56,8 @@ void findWordsUtil(char mat[N][N], int visited[N][N], int i, int j, char str[M])
 	int dx,dy;
 		for (dx = (i <= 0 ? 0 : -1); dx <= (i >= N-1 ? 0 : 1); dx++) {
 			for (dy = (j <= 0 ? 0 : -1); dy <= (j >= N-1 ? 0 : 1); dy++) {
-				if (!visited[dx+i][dy+j] ){
+				// if (isfind == -1 ) {	printf("%s\n", str);}
+				if (!visited[dx+i][dy+j] && (isfind == -2 || isfind > -1 )){
 					findWordsUtil(mat,visited, dx+i, dy+j, str);
 				}
 			}
