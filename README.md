@@ -21,7 +21,6 @@ Pour une grille de 3*3 si non idiqué default size = 4
 
 ```
 make size=3
-
 ```
 Pour exe le programme
 
