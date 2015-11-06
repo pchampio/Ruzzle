@@ -19,7 +19,7 @@ int main(){
 	creeTrie();
 
 	findWords(grille);
-  printf(" \n");
+	printf(" \n");
 	affic_mat(grille);
 	return 0;
 }
