@@ -16,20 +16,22 @@ _Makefile_
 	creation d'un fichier ./bin où l'exécutable est compiler
 
 **Fonction Make**
-```
-make size=3 
-```
 
 Pour une grille de 3*3 si non idiqué default size = 4
+
+```
+make size=3
+
+```
+Pour exe le programme
 
 ```
 bin\main.exe
 ```
 
-Pour exe le programme
+Pour se rm les fichier execulable --> version propre
+
 
 ```
 make clean
 ```
-
-Pour se rm les fichier execulable --> version propre
