@@ -48,7 +48,7 @@ void findWordsUtil(char mat[N][N], int visited[N][N], int i, int j, char str[M])
 	int isfind = search(str);
 	// Si str is present dans le dico, alors il est print
 	if (isfind == strlen(str)){
-		printf("%s : %ipts \n", str, compte_points(str));
+		printf("%s : %ipts / ", str, compte_points(str));
 	}
 
 

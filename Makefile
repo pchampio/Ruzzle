@@ -2,27 +2,21 @@ CC=gcc
 OBJ=./src/*.c
 LIB=./include/*.h
 FLAG=-Wall
-SIZE=-DN=4
+
 OBJDIR=./bin
-# SIZE=-DN=4
-ifeq ($(size), 1)  #at this point, the makefile checks if FEATURE is ==1
+
+# ifeq ($(origin SIZE),undefined)
+# if
+# SIZE=-DN=$(size)
+# endif
+
+
+ifndef size
+SIZE=-DN=4
+else
 SIZE=-DN=$(size)
 endif
-ifeq ($(size), 2)
-SIZE=-DN=$(size)
-endif
-ifeq ($(size), 3)
-SIZE=-DN=$(size)
-endif
-ifeq ($(size), 4)
-SIZE=-DN=$(size)
-endif
-ifeq ($(size), 5)
-SIZE=-DN=$(size)
-endif
-ifeq ($(size), 6)
-SIZE=-DN=$(size)
-endif
+
 
 
 main: $(OBJ) $(LIB)
