@@ -5,16 +5,15 @@ FLAG=-Wall
 
 OBJDIR=./bin
 
-# ifeq ($(origin SIZE),undefined)
-# if
-# SIZE=-DN=$(size)
-# endif
-
 
 ifndef size
 SIZE=-DN=4
 else
 SIZE=-DN=$(size)
+endif
+
+ifeq ($(size),1)
+SIZE=-DN=4
 endif
 
 
@@ -25,4 +24,4 @@ main: $(OBJ) $(LIB)
 main.o: $(OBJDIR)/main.c
 	$(CC) -c $(OBJDIR)/main.c $(FLAG) $(SIZE)
 clean:
-	rm -rf ./$(OBJDIR)
+	rm -rf $(OBJDIR)
