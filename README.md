@@ -17,10 +17,10 @@ _Makefile_
 
 **Fonction Make**
 
-Pour une grille de 3*3 si non idiqué default size = 4
+Pour une grille de 3*3 
 
 ```
-make size=3
+make size=3  // si non idiqué default size = 4
 ```
 Pour exe le programme
 
