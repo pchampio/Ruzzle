@@ -95,7 +95,7 @@ void creeTrie(){
   char character[MAX_LENGHT];
   FILE * fic;
   fic = fopen("data/words.txt","r");
-
+  if(fic == NULL){fic = fopen("../data/words.txt","r");}
   if(fic != NULL){
 
       fscanf(fic,"%s",character);
