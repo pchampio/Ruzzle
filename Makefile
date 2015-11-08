@@ -2,7 +2,7 @@ CC=gcc
 OBJ=./src/*.c
 LIB=./include/*.h
 FLAG=-Wall
-
+DOCDIR=./doc
 OBJDIR=./bin
 
 
@@ -25,3 +25,6 @@ main.o: $(OBJDIR)/main.c
 	$(CC) -c $(OBJDIR)/main.c $(FLAG) $(SIZE)
 clean:
 	rm -rf $(OBJDIR)
+	rm -rf $(DOCDIR)
+doc:
+	doxygen

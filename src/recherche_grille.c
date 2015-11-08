@@ -6,6 +6,27 @@
 #include "../include/str_perso.h"
 #include "../include/recherche_dictio.h"
 
+/**
+* \file recherche_grille.c
+
+* \fn compte_points(char mot[]);
+* \param mot le mot où le comtage des points est appliquer est passer
+* \brief compte les point q'un mot génère selon les règles du scrable
+* \return le nombre de point du mot
+
+* \fn void findWordsUtil(char mat[N][N], int visited[N][N], int i, int j, char str[M]);
+* \param mat la matrice de mots
+* \param visited c'est un matrice qui contient les cellules déja parcoure
+* \param i l'index des collones où la recherche commance/continue
+* \param j l'index des lignes où la recherche commance/continue
+* \param str le mot former
+* \brief Est une fonction recursive qui affiche les mots présent dans la matrise
+
+* \fn void findWords(char mat[N][N]);
+* \param mat la matrice de mots
+* \brief Point de départ de la fonction findWordsUtil
+*/
+
 int compte_points(char mot[]){
 	int i = 0, pts = 0;
     for(i = 0 ; mot[i] != '\0' ; i++){

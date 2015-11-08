@@ -4,7 +4,34 @@
 #include <string.h>
 
 #include "../include/recherche_dictio.h"
+/**
+* \file recherche_dictio.c
+* \struct t_element
+* \brief Noeud pour former un dico\n
+* t_element represente le diconaire\n
+* t_element* lien_avec[ALPHABET_SIZE] reprèsente le prochain character \n
 
+* les caractères sont implicitement définis par index
+
+* \fn create_node();
+* \brief crée le prochain character d'un mot dans le diconaire
+
+* \fn insert_node (char character[MAX_LENGHT]);
+* \param character mot a introduire dans l'arbre prefixer
+* \brief insert un mot dans le diconaire
+
+* \fn search(char character[MAX_LENGHT]);
+* \brief recherche si un mot existe dans le diconaire
+* \param character mot a recherhcé
+* \return -1 si il n'existe pas\n
+* -2 si c'est le début d'un mot\n
+* ou la taille du mot (donc il existe)
+
+* \fn creeTrie();
+* \brief crée l'arbre de prefixer, qui représente le diconaire
+
+
+*/
 struct t_element {
     int data;
     struct t_element* lien_avec[ALPHABET_SIZE];
@@ -20,24 +47,21 @@ struct t_element*  create_node() {
     node->data = -1;
     return node;
 }
-/*                                racine
- *                               /   \     \
- *                               m   p      g        --> niveau 0
- *                               |   |      |
- *                               a   i      a        --> niveau 1
- *                               |   |  \   |
- *                               r   e   x  g        --> niveau 2
- *                              /    |   |
- *                             t    r    e           --> niveau 3
- *                             |    |    |
- *                             i    r    l           --> niveau 4
- *                             |    |
- *                             n    e                --> niveau 5
- */
-
-// caractères sont implicitement définis par index
-
-
+/*
+*                                racine
+*                               /   \     \
+*                               m   p      g        --> niveau 0
+*                               |   |      |
+*                               a   i      a        --> niveau 1
+*                               |   |  \   |
+*                               r   e   x  g        --> niveau 2
+*                              /    |   |
+*                             t    r    e           --> niveau 3
+*                             |    |    |
+*                             i    r    l           --> niveau 4
+*                             |    |
+*                             n    e                --> niveau 5
+*/
 // c'est comme une file où on ajoute un nœud à la fin de la liste
 // on traverse, (node = node->lien_avec[index] au lieu de node = node->lien_avec) jusqu'a  node->lien_avec[index] == NULL (au lieu de node->lien_avec == NULL)
 // quand on atteint NULL, au lieu d'ajoute 1 t_element et faire pointer celuis avent au nouveau, on cree plusieurs t_element (nouvelle lettres de alphaBet)

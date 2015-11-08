@@ -5,6 +5,18 @@
 
 #include "../include/gener_grille.h"
 
+/**
+* \file gener_grille.c
+* \fn void affic_mat(char mat[N][N]);
+* \brief Affiche une matrice dans le terminal
+* \param mat matrice a afficher
+* \fn char distLetter();
+* \brief crée un character en fonction de la Fréquence d'apparition des lettres en français
+* \return Renvoie un character
+* \fn void gener_gril(char mat[N][N]);
+* \brief crée une matrice de mots aléatoire
+* \param mat matrice a crée
+*/
 
 /* Affiche une matrice */
 void affic_mat(char mat[N][N]){
