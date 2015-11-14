@@ -19,7 +19,7 @@
 *
 * etc...
 */
- 
+
 /**
  * \file main.c
  * \author Champion Pierre / Mok Modira  / Laville Martin
