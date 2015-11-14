@@ -27,7 +27,7 @@ Permet de compiler l'ensemble des sources, l'exécutable généré peut être re
 
 	Le parametre size= permet de choisir la taille de la grille
 	Par exemple pour une grille de 3*3 : (par defaut size=4)
-	```$ make size=3```
+```$ make size=3```
 
 
 Pour exe le programme
