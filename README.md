@@ -1,27 +1,40 @@
-Release - 1
-===
+Ruzzle
+==
+Le Ruzzle est un jeu originaire du monde mobile, ce jeu consiste à former le plus de mots en un temps imparti à partir
+d'une grille de lettres générée aléatoirement.
+Le but étant de marquer le plus de points possible pour celà des bonus lettre et mot double/triple sont répartis sur la grille
+mais il n'est pas permis de réutiliser deux fois la même case.
 
-**To do :**
+# Release - 1
 
-	documentations
-	test unitaires
-	test GDB
 
-**Done :**
+## To do :
 
-_Makefile_
+> documentations
+> test unitaires
+> test GDB
 
-	les fichiers sources sont dans ./src
-	les fichiers entêtes (.h) sont dans ./include
-	creation d'un fichier ./bin où l'exécutable est compiler
+## Fait :
 
-**Fonction Make**
 
-Pour une grille de 3*3 
+	Les fichiers sources sont dans ./src
+	Les fichiers entêtes (.h) sont dans ./include
+	Creation d'un fichier ./bin où l'exécutable est compiler
+	Documentations Doxygen
+
+## Instructions de compilation
 
 ```
-make size=3  // si non idiqué default size = 4
+$ make
 ```
+
+Permet de compiler l'ensemble des sources, l'exécutable généré peut être retrouvé dans ./bin .
+
+>Le parametre size= permet de choisir la taille de la grille
+>Par exemple pour une grille de 3*3 : (par defaut size=4)
+>```$ make size=3```
+
+
 Pour exe le programme
 
 ```
@@ -34,4 +47,3 @@ Pour se rm les fichier execulable --> version propre
 ```
 make clean
 ```
-
