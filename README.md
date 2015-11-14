@@ -16,7 +16,6 @@ mais il n'est pas permis de réutiliser deux fois la même case.
 
 ## Fait :
 
-
 	Les fichiers sources sont dans ./src
 	Les fichiers entêtes (.h) sont dans ./include
 	Creation d'un fichier ./bin où l'exécutable est compiler
