@@ -23,7 +23,7 @@ mais il n'est pas permis de réutiliser deux fois la même case.
 $ make
 ```
 
-Permet de compiler l'ensemble des sources, l'exécutable généré peut être retrouvé dans ./bin .
+Permet de compiler l'ensemble des sources, l'exécutable généré peut être retrouvé dans ```./bin```
 
 	Le parametre size= permet de choisir la taille de la grille
 	Par exemple pour une grille de 3*3 : (par defaut size=4)
