@@ -33,11 +33,8 @@ Permet de compiler l'ensemble des sources, l'exécutable généré peut être re
 Pour exe le programme
 
 ```
-bin\main.exe
+$ bin\main.exe
 ```
-
-Pour se rm les fichier execulable --> version propre
-
 
 ```
 make clean
