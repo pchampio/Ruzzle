@@ -37,5 +37,5 @@ $ bin\main.exe
 ```
 
 ```
-make clean
+$ make clean
 ```
