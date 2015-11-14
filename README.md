@@ -6,18 +6,18 @@ Le but étant de marquer le plus de points possible pour celà des bonus lettre 
 mais il n'est pas permis de réutiliser deux fois la même case.
 
 # Release - 1
-## To do :
+### To do :
 	documentations
 	test unitaires
 	test GDB
 
-## Fait :
+### Fait :
 	Les fichiers sources sont dans ./src
 	Les fichiers entêtes (.h) sont dans ./include
 	Creation d'un fichier ./bin où l'exécutable est compiler
 	Documentations Doxygen
 
-## Instructions de compilation
+### Instructions de compilation
 
 ```
 $ make
