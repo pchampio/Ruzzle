@@ -1,4 +1,4 @@
-// prototypes et define, pour les fonctions de recherche dans le dico
+//prototypes et define, pour les fonctions de recherche dans le dico
 #define M (N*N)
 #define ALPHABET_SIZE 26
 #define  MAX_LENGHT M

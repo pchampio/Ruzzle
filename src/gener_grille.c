@@ -11,11 +11,11 @@
 * \brief Affiche une matrice dans le terminal
 * \param mat matrice a afficher
 * \fn char distLetter();
-* \brief crée un character en fonction de la Fréquence d'apparition des lettres en français
-* \return Renvoie un character
+* \brief créé un caractère en fonction de la fréquence d'apparition des lettres en français
+* \return Renvoie un caractère
 * \fn void gener_gril(char mat[N][N]);
-* \brief crée une matrice de mots aléatoire
-* \param mat matrice a crée
+* \brief créé une matrice de mots aléatoires
+* \param mat matrice a créer
 */
 
 /* Affiche une matrice */
@@ -29,7 +29,7 @@ void affic_mat(char mat[N][N]){
   printf("\n");
 }
 
-// https://fr.wikipedia.org/wiki/Fr%C3%A9quence_d%27apparition_des_lettres_en_fran%C3%A7ais
+/* https://fr.wikipedia.org/wiki/Fréquence_d'apparition_des_lettres_en_français */
 char distLetter(){
     rand();
     int x = rand() % 15833;

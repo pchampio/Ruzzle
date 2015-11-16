@@ -22,12 +22,12 @@
 
 /**
  * \file main.c
- * \author Champion Pierre / Mok Modira  / Laville Martin
+ * \author Champion Pierre / Mok Modira / Laville Martin
  * \version   1.0
  * \date       05 Novembre 2015
  * \fn int main (void)
- * \brief fait appelle aux diférentes function
- * \return Renvoie un entier, nul si aucune erreur n'est arrivee, autre chose sinon
+ * \brief fait appel aux différentes fonctions
+ * \return Renvoie un entier, nul si aucune erreur n'est arrivée, autre chose sinon
 
 
 

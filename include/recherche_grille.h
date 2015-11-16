@@ -1,4 +1,4 @@
-// prototypes et define, pour les de recherches dans grille
+//prototypes et define, pour les fonctions de recherches dans grille
 #define M (N*N)
 #define ALPHABET_SIZE 26
 #define  MAX_LENGHT M

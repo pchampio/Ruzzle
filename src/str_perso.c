@@ -9,13 +9,13 @@
 /**
 * \file str_perso.c
 * \fn add_char_to_str(char string[M], char character);
-* \brief ajoute un character à une chaine de character
-* \param string chaine de character où le character sera ajouter
-* \param character character qui sera ajouter à la chaine de character
+* \brief ajoute un caractère à une chaine de caractère
+* \param string chaine de caractère où le caractère sera ajouté
+* \param character caractère qui sera ajouté à la chaine de caractère
 
 * \fn sub_char_to_str(char string[M]);
-* \brief retire le dernier character à une chaine de character
-* \param string chaine de character qui sera reduit
+* \brief retire le dernier caractère à une chaine de caractère
+* \param string chaine de caractère qui sera reduit
 */
 void add_char_to_str(char string[M], char character){
       string[strlen(string)+1] = '\0';

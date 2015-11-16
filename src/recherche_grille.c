@@ -10,17 +10,17 @@
 * \file recherche_grille.c
 
 * \fn compte_points(char mot[]);
-* \param mot le mot où le comtage des points est appliquer est passer
-* \brief compte les point q'un mot génère selon les règles du scrable
+* \param mot le mot où le comptage des points est appliqué
+* \brief compte les point d'un mot génèré selon les règles du scrabble
 * \return le nombre de point du mot
 
 * \fn void findWordsUtil(char mat[N][N], int visited[N][N], int i, int j, char str[M]);
 * \param mat la matrice de mots
-* \param visited c'est un matrice qui contient les cellules déja parcoure
-* \param i l'index des collones où la recherche commance/continue
-* \param j l'index des lignes où la recherche commance/continue
-* \param str le mot former
-* \brief Est une fonction recursive qui affiche les mots présent dans la matrise
+* \param visited c'est une matrice qui contient les cellules déja parcourues
+* \param i l'index des collones où la recherche commence/continue
+* \param j l'index des lignes où la recherche commence/continue
+* \param str le mot formé
+* \brief Est une fonction recursive qui affiche les mots présent dans la matrice
 
 * \fn void findWords(char mat[N][N]);
 * \param mat la matrice de mots
@@ -60,20 +60,20 @@ int compte_points(char mot[]){
   return pts;
 }
 
-// une fonction recursive qui print les mots présent dans la matrise
+// une fonction recursive qui prend les mots présents dans la matrice
 void findWordsUtil(char mat[N][N], int visited[N][N], int i, int j, char str[M]){
-	// marke la cellule (i, j) comme visiter
+	// marque la cellule (i, j) comme visitée
 	// ajoute un char a str
 	visited[i][j] = 1;
 	add_char_to_str(str, mat[i][j]);
 	int isfind = search(str);
-	// Si str is present dans le dico, alors il est print
+	// Si str est present dans le dico, alors il est affiché
 	if (isfind == strlen(str)){
 		printf("%s : %ipts / ", str, compte_points(str));
 	}
 
 
-	// Traverse les 8 adjacent cellules de mat[i][j]
+	// Traverse les 8 cellules adjacentes de mat[i][j]
 	int dx,dy;
 		for (dx = (i <= 0 ? 0 : -1); dx <= (i >= N-1 ? 0 : 1); dx++) {
 			for (dy = (j <= 0 ? 0 : -1); dy <= (j >= N-1 ? 0 : 1); dy++) {
@@ -83,14 +83,14 @@ void findWordsUtil(char mat[N][N], int visited[N][N], int i, int j, char str[M])
 				}
 			}
 		}
-	// Effacer le caractère de str et raz de visited pour le prochain batch de calcul
+	// Efface le caractère de str et raz de visited pour la prochaine série de calcul
 	sub_char_to_str(str);
 	visited[i][j] = 0;
 }
 
-// Prints les mots trouve
+// Affiche les mots trouvés
 void findWords(char mat[N][N]){
-	// Mark tout les characters a pas visite
+	// Marque tous les caractères a ne pas visiter
 	int visited[N][N] = {{0}};
 
 	// Initialise str

@@ -8,27 +8,27 @@
 * \file recherche_dictio.c
 * \struct t_element
 * \brief Noeud pour former un dico\n
-* t_element represente le diconaire\n
-* t_element* lien_avec[ALPHABET_SIZE] reprèsente le prochain character \n
+* t_element represente le dictionnaire\n
+* t_element* lien_avec[ALPHABET_SIZE] représente le prochain caractère \n
 
 * les caractères sont implicitement définis par index
 
 * \fn create_node();
-* \brief crée le prochain character d'un mot dans le diconaire
+* \brief crée le prochain caractère d'un mot dans le dictionaire
 
 * \fn insert_node (char character[MAX_LENGHT]);
-* \param character mot a introduire dans l'arbre prefixer
+* \param character mot a introduire dans l'arbre prefixé
 * \brief insert un mot dans le diconaire
 
 * \fn search(char character[MAX_LENGHT]);
-* \brief recherche si un mot existe dans le diconaire
-* \param character mot a recherhcé
+* \brief recherche si un mot existe dans le dictionnaire
+* \param character mot a rechercher
 * \return -1 si il n'existe pas\n
 * -2 si c'est le début d'un mot\n
 * ou la taille du mot (donc il existe)
 
 * \fn creeTrie();
-* \brief crée l'arbre de prefixer, qui représente le diconaire
+* \brief crée l'arbre préfixé, qui représente le dictionnaire
 
 
 */
@@ -64,8 +64,8 @@ struct t_element*  create_node() {
 */
 // c'est comme une file où on ajoute un nœud à la fin de la liste
 // on traverse, (node = node->lien_avec[index] au lieu de node = node->lien_avec) jusqu'a  node->lien_avec[index] == NULL (au lieu de node->lien_avec == NULL)
-// quand on atteint NULL, au lieu d'ajoute 1 t_element et faire pointer celuis avent au nouveau, on cree plusieurs t_element (nouvelle lettres de alphaBet)
-// où là valeur est égal au niveau (en bas) donc la longeur d'un mot.
+// quand on atteint NULL, au lieu d'ajouté 1 t_element et faire pointer celui avant au nouveau, on cree plusieurs t_element (nouvelle lettres de alphaBet)
+// où là valeur est égal au niveau (en bas) donc la longueur d'un mot.
 void insert_node(char character[MAX_LENGHT]) {
     int length = strlen(character);
     int index;
@@ -75,19 +75,19 @@ void insert_node(char character[MAX_LENGHT]) {
     struct t_element* node = racine;  // Pour l'insertion de chaque chaîne, nous allons commencer à partir de la racine
 
     for(level = 0 ; level < length; level++) {
-        // pour chaques level trouver l'index correspondant
+        // pour chaque level trouver l'index correspondant
         // characters (a-z = 0-26)
         index = character[level] - 'a';
 
         if(node->lien_avec[index] == NULL) {
-            // mettre la valeur de ce charactersdans node->lien_avec[index]
+            // mettre la valeur de ce caractère dans node->lien_avec[index]
             // et on cree un autre t_element qui va pointer vers (node->lien_avec[index] du dessus)
             node->lien_avec[index] = create_node();  // qui est : struct t_element* suivant = create_node(); node->lien_avec[index] = suivant;
         }
-        // on rentre dans la lettre crée pour en crée une nouvelle
+        // on rentre dans la lettre créée pour en créer une nouvelle
         node = node->lien_avec[index];
     }
-    // a la fin de l'arbre node->data est égal à la longeur du mot
+    // a la fin de l'arbre node->data est égal à la longueur du mot
     node->data = level;
 }
 
@@ -123,7 +123,7 @@ void creeTrie(){
   if(fic != NULL){
 
       fscanf(fic,"%s",character);
-      printf("creation d'un arbre prefixer de : %s ",character);
+      printf("creation d'un arbre prefixe de : %s ",character);
       while(!feof(fic)){
           insert_node(character);
           // printf("%s\n",character);
