@@ -1,25 +1,37 @@
-#define N 4
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 
-typedef struct{char lettre; int points; char bon[2];}t_case;
+#include "../include/gener_grille.h"
 
+/**
+* \file gener_grille.c
+* \fn void affic_mat(char mat[N][N]);
+* \brief Affiche une matrice dans le terminal
+* \param mat matrice a afficher
+* \fn char distLetter();
+* \brief crée un character en fonction de la Fréquence d'apparition des lettres en français
+* \return Renvoie un character
+* \fn void gener_gril(char mat[N][N]);
+* \brief crée une matrice de mots aléatoire
+* \param mat matrice a crée
+*/
 
 /* Affiche une matrice */
-void affic_mat(t_case mat[N][N]){
+void affic_mat(char mat[N][N]){
 	int i, j;
 	for(i = 0; i < N ; i++){
-        	for(j = 0; j < N; j++){
-            		printf("%c ", mat[i][j].lettre);
-		}
-        printf("\n");
-    }
-    printf("\n");
+		for(j = 0; j < N; j++)
+			printf("%c ", mat[i][j]);
+  	printf("\n");
+  }
+  printf("\n");
 }
+
 // https://fr.wikipedia.org/wiki/Fr%C3%A9quence_d%27apparition_des_lettres_en_fran%C3%A7ais
-char distLetter() {
-	  rand();
+char distLetter(){
+    rand();
     int x = rand() % 15833;
     if(x < 1209) return 'a';
     if(x < 1510) return 'b';
@@ -46,23 +58,14 @@ char distLetter() {
     if(x < 15452) return 'w';
     if(x < 15499) return 'x';
     if(x < 15757) return 'y';
-    if(x < 15833) return 'z';
+    return 'z';
 }
 
-
-void gener_gril(t_case mat[N][N]){
+void gener_gril(char mat[N][N]){
 	int i, j;
 	srand(time(NULL));
 	for(i = 0; i < N ; i++){
-        	for(j = 0; j < N; j++){
-						mat[i][j].lettre = distLetter();
-		}
+		for(j = 0; j < N; j++)
+			mat[i][j] = distLetter();
 	}
-}
-
-int main(){
-	t_case grille[N][N];
-	gener_gril(grille);
-	affic_mat(grille);
-	return 0;
 }

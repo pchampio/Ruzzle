@@ -1,20 +1,41 @@
+Ruzzle
+==
+Le Ruzzle est un jeu originaire du monde mobile, ce jeu consiste à former le plus de mots en un temps imparti à partir
+d'une grille de lettres générée aléatoirement.
+Le but étant de marquer le plus de points possible pour celà des bonus lettre et mot double/triple sont répartis sur la grille
+mais il n'est pas permis de réutiliser deux fois la même case.
 
-BUT
-===
+# Release - 1
+### To do :
+	documentations
+	test unitaires
+	test GDB
 
-Il faut former le plus de mots possibles avec les seize lettres disponibles dans une grille de quatre par quatre. Les mots doivent être au moins de deux lettres, et trouvés en utilisant des lettres adjacentes les unes aux autres sans réutiliser deux fois la même case de la grille. Les formes conjuguées des verbes sont acceptées.
+### Fait :
+	Les fichiers sources sont dans ./src
+	Les fichiers entêtes (.h) sont dans ./include
+	Creation d'un fichier ./bin où l'exécutable est compiler
+	Documentations Doxygen
 
-Comme au Scrabble chaque lettre a une valeur en fonction de sa difficulté à être placée dans un mot et certaines cases sont spéciales :
+### Instructions de compilation
 
-    Lettre compte double : la lettre dans cette case compte deux fois plus de points
-    Lettre compte triple : la lettre dans cette case compte trois fois plus de points
-    Mot compte double : les mots contenant cette case comptent deux fois plus de points
-    Mot compte triple : les mots contenant cette case comptent trois fois plus de points
+```
+$ make
+```
 
-Il existe également un bonus en fonction de la longueur du mot créé1 :
+Permet de compiler l'ensemble des sources, l'exécutable généré peut être retrouvé dans **./bin**
 
-    5 lettres : 5 points supplémentaires
-    6 lettres : 10 points supplémentaires
-    7 lettres : 15 points supplémentaires
-    8 lettres : 20 points supplémentaires
-    9 lettres ou plus : 25 points supplémentaires
+	Le parametre size= permet de choisir la taille de la grille
+	Par exemple pour une grille de 3*3 : (par defaut size=4)
+```$ make size=3```
+
+
+Pour exe le programme
+
+```
+$ bin\main.exe
+```
+
+```
+$ make clean
+```
