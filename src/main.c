@@ -13,9 +13,16 @@
 *
 * Le but de ce projet est de programmer un solver d'une grille Ruzzle.
 * C'est-à-dire un programme capable de résoudre une grille d'une certaine taille en en trouvant tous les mots existants.
-* Nous avons utilisé le langage C ainsi que git comme outil de versioning et de partage.
+* Nous avons utilisé le langage C comme langage de programmation ainsi que git comme outil de versioning et de partage.
 *
-* \section install_sec Fonction
+* \section install_sec1 Répartion des Taches
+* 
+* Le code du programme a été majoritairement réalisé par Pierre (recherche_dictio.c et str_perso.c) qui a aussi écrit le makefile, 
+* Martin a codé gener_gril.c ainsi que le comptage des points (dans recherche_grille.c) et Modira a programmé la plus grosse partie de recherche_grille.c.
+* Chacun s'est occupé de la documentation de son propre module.
+*  
+*
+* \section install_sec2 Fonction
 *
 *  Notre programme est constitué de quatre modules :  gener_grille.c recherche_dictio.c recherche_grille.c str_perso.c.
 *
@@ -38,21 +45,31 @@
 *
 * Ce module fonctionne avec un systeme de backtracking (retour sur trace).
 * Il consiste à trouver un ensemble de caractère de la grille (utilise le module str_perso pour agrandir et diminuer les chaines),
-* si cette chaine n'existe pas il revient en arrière (supprime le dernier caractère), pour pouvoir changer de chemin et ainsi se débloquer.
+* si cette chaine n'existe pas il revient en arrière (supprime le dernier caractère), pour pouvoir changer de chemin et ainsi se débloquer.\n
+* On trouve aussi dans ce module la fonction qui nous permet de décompter les points. Une fois qu'un mot a été défini comme étant dans la grille, 
+* au moment de l'afficher dans le terminal, cette fonction parcourt le mot en question en comptant un certain nombre de points par lettre
+* (pour simplifier les choses, nous avons choisi de prendre les points du scrabble) et affiche le score renvoyé à coté du mot.
 *
-* \section install_sec2 Développement
 *
-* En ce qui concerne le développement, nous avons développé dans le langage C. \n
+* \section install_sec3 Problèmes de développement
+*
+* En ce qui concerne le développement, nous avons développé dans le langage C.
 * Certaines fonctions ont été plus compliquées que d'autre.
-* Notamment le backtracking et la recherche dans le dictionnaire.\n
+* Notamment le backtracking et la recherche dans le dictionnaire.
+* 
+* \subsection step1 Backtracking
+*
 * En premier lieu, le backtracking n'avait pas été bien utlisé, ainsi,
 * même si une chaine de caractère ne correspondait pas,
-* on continuait à regarder avec un caractère supplémentaire :
+* on continuait à regarder le mot qui suivait (avec un caractère supplémentaire) :
 * Beaucoup trop de calculs inutiles étaient effectués.\n
 * La version qui a suivi et que nous vous présentons aujourd'hui, résout ce problème.
 * Le calcul de matrice 100x100 est désormais possible dans un temps raisonnable,
 * alors qu'auparavant, le calcul d'une matrice 5x5 était impossible.
 * Le nombre de calcul est ainsi passé de factoriel à linéaire.\n
+*
+* \subsection step2 Recherche
+*
 * Le nombre de recherche d'un élément dans le dictionnaire est redondant dans notre programme.\n
 * C'est pour cela que l'arbre préfixé est très optimisé bien que
 * son temps de génération prenne une grosse partie du temps d'execution pour une petite grille,
