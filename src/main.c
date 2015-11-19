@@ -16,11 +16,11 @@
 * Nous avons utilisé le langage C comme langage de programmation ainsi que git comme outil de versioning et de partage.
 *
 * \section install_sec1 Répartion des Taches
-* 
-* Le code du programme a été majoritairement réalisé par Pierre (recherche_dictio.c et str_perso.c) qui a aussi écrit le makefile, 
+*
+* Le code du programme a été majoritairement réalisé par Pierre (recherche_dictio.c et str_perso.c) qui a aussi écrit le makefile,
 * Martin a codé gener_gril.c ainsi que le comptage des points (dans recherche_grille.c) et Modira a programmé la plus grosse partie de recherche_grille.c.
 * Chacun s'est occupé de la documentation de son propre module.
-*  
+*
 *
 * \section install_sec2 Fonction
 *
@@ -46,7 +46,7 @@
 * Ce module fonctionne avec un systeme de backtracking (retour sur trace).
 * Il consiste à trouver un ensemble de caractère de la grille (utilise le module str_perso pour agrandir et diminuer les chaines),
 * si cette chaine n'existe pas il revient en arrière (supprime le dernier caractère), pour pouvoir changer de chemin et ainsi se débloquer.\n
-* On trouve aussi dans ce module la fonction qui nous permet de décompter les points. Une fois qu'un mot a été défini comme étant dans la grille, 
+* On trouve aussi dans ce module la fonction qui nous permet de décompter les points. Une fois qu'un mot a été défini comme étant dans la grille,
 * au moment de l'afficher dans le terminal, cette fonction parcourt le mot en question en comptant un certain nombre de points par lettre
 * (pour simplifier les choses, nous avons choisi de prendre les points du scrabble) et affiche le score renvoyé à coté du mot.
 *
@@ -56,8 +56,8 @@
 * En ce qui concerne le développement, nous avons développé dans le langage C.
 * Certaines fonctions ont été plus compliquées que d'autre.
 * Notamment le backtracking et la recherche dans le dictionnaire.
-* 
-* \subsection step1 Backtracking
+*
+* \subsection step5 Backtracking
 *
 * En premier lieu, le backtracking n'avait pas été bien utlisé, ainsi,
 * même si une chaine de caractère ne correspondait pas,
@@ -68,7 +68,7 @@
 * alors qu'auparavant, le calcul d'une matrice 5x5 était impossible.
 * Le nombre de calcul est ainsi passé de factoriel à linéaire.\n
 *
-* \subsection step2 Recherche
+* \subsection step6 Recherche
 *
 * Le nombre de recherche d'un élément dans le dictionnaire est redondant dans notre programme.\n
 * C'est pour cela que l'arbre préfixé est très optimisé bien que
@@ -76,7 +76,7 @@
 * il simplifie énormément les calculs pour une grande grille.\n
 * Par exemple pour une matrice 4x4, le nombre de recherche dans le dictionnaire est environ de 2000.
 *
-* \section install_sec3 Débogage
+* \subsection step7 Débogage
 * Pour le débogage, supposons qu'une erreur est présente dans la fonction findWordsUtil présent dans le module recherche_grille.
 * Suite à cette erreur le backtracking ne s'effectue pas, et nous avons donc
 * la création d'un mot "infini" (Le retour en arrière sur le chemin ne s'effectue pas). Voici les images de notre gdb nous affichant cette erreur.
