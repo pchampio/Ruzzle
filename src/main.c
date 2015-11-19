@@ -15,7 +15,12 @@
 * C'est-à-dire un programme capable de résoudre une grille d'une certaine taille en en trouvant tous les mots existants.
 * Nous avons utilisé le langage C comme langage de programmation ainsi que git comme outil de versioning et de partage.
 *
-* \section install_sec Fonction
+* \section install_sec1 Répartion des Taches
+* 
+* Valentin a fait gdb, tous les .c, les .h, le makefile et le compte rendu ici présent.
+* Il a pas eu le courage de faire les tests du coup on les a pas fait.
+*
+* \section install_sec2 Fonction
 *
 *  Notre programme est constitué de quatre modules :  gener_grille.c recherche_dictio.c recherche_grille.c str_perso.c.
 *
@@ -44,7 +49,7 @@
 * (pour simplifier les choses, nous avons choisi de prendre les points du scrabble) et affiche le score renvoyé à coté du mot.
 *
 *
-* \section install_sec2 Problèmes de développement
+* \section install_sec3 Problèmes de développement
 *
 * En ce qui concerne le développement, nous avons développé dans le langage C.
 * Certaines fonctions ont été plus compliquées que d'autre.
