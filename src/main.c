@@ -17,8 +17,10 @@
 *
 * \section install_sec1 Répartion des Taches
 * 
-* Valentin a fait gdb, tous les .c, les .h, le makefile et le compte rendu ici présent.
-* Il a pas eu le courage de faire les tests du coup on les a pas fait.
+* Le code du programme a été majoritairement réalisé par Pierre (recherche_dictio.c et str_perso.c) qui a aussi écrit le makefile, 
+* Martin a codé gener_gril.c ainsi que le comptage des points (dans recherche_grille.c) et Modira a programmé la plus grosse partie de recherche_grille.c.
+* Chacun s'est occupé de la documentation de son propre module.
+*  
 *
 * \section install_sec2 Fonction
 *
