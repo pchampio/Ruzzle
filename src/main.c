@@ -59,6 +59,16 @@
 * il simplifie énormément les calculs pour une grande grille.\n
 * Par exemple pour une matrice 4x4, le nombre de recherche dans le dictionnaire est environ de 2000.
 *
+* \section install_sec3 Débogage
+* Pour le débogage, supposons qu'une erreur est présente dans la fonction findWordsUtil présent dans le module recherche_grille.
+* Suite à cette erreur le backtracking ne s'effectue pas, et nous avons donc
+* la création d'un mot "infini" (Le retour en arrière sur le chemin ne s'effectue pas). Voici les images de notre gdb nous affichant cette erreur.
+* \image html "../../imgs/gdb1.png"
+* Nous avons inséré un breakpoint au niveau de la fonction findWordsUtil pour pouvoir rentrer dans la fonction.
+* Nous lançons le programme avec un run. Puis un display str qui nous affiche la valeur de str. Au début, il n'y a pas de problème. Puis, on s'aperçoit qu'il faut enlever un caractère à la sortie de la fonction.
+*
+* \image html "../../imgs/gdb2.png"
+* Pour régler ce problème, nous avons insérer "sub_char_to_str(str);" en fin de fonction.
 */
 
 /**

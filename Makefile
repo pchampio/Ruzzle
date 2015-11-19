@@ -1,7 +1,7 @@
 CC=gcc
 OBJ=./src/*.c
 LIB=./include/*.h
-FLAG=-Wall
+FLAG=-Wall -g
 DOCDIR=./doc
 OBJDIR=./bin
 
