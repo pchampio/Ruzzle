@@ -13,7 +13,7 @@
 *
 * Le but de ce projet est de programmer un solver d'une grille Ruzzle.
 * C'est-à-dire un programme capable de résoudre une grille d'une certaine taille en en trouvant tous les mots existants.
-* Nous avons utilisé le langage C ainsi que git comme outil de versioning et de partage.
+* Nous avons utilisé le langage C comme langage de programmation ainsi que git comme outil de versioning et de partage.
 *
 * \section install_sec Fonction
 *
