@@ -108,10 +108,16 @@
 * Il faut ajouter à la réussite de notre projet que sont élaboration nous a permis d'apprendre et de mettre en place différentes composantes de la réalistion d'ub projet d'algorithmique.
 * Qui sont essentielles à un bon programmeur.\n\n
 *
-* test
+* Ce projet est le premier que nous effectuons dans le langage C. C'est aussi grace a ce projet que nous nous somme familiariser avec les "Makefile"
+* et la façcon de structurer les fichier afin de rendre un contenu propre.\n
+* Il faut également souligner que les connaissances en matière de programmation des différents membres étaient inégales et que ce projet à permis a chacun des membres de bénéficier des connaissances des autres.\n\n
+* En ce qui concerne le caractère collaboratif, nous avont fortement utiliser GITHUB, avec un total de plus de 120 commit, cette outils de versioning à été abuser,
+* dans le but d'étre encore plus éficase dans le travail de groupe. Notre travail donc ouvert à tous et il ce trouve que notre page github sur le ruzzle à plus de 700vues.\n\n
+*
+* Pour finir, nous avons utiliser Doxygen pour la mise en place de la documentation, l'apprentissage de ça syntaxe est nécessaire pour présenter des projets.\n
+* Champion Pierre / Mok Modira / Laville Martin
 */
-
-/**
+/**1
  * \file main.c
  * \author Champion Pierre / Mok Modira / Laville Martin
  * \version   1.0
