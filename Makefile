@@ -27,7 +27,9 @@ main.o: $(OBJDIR)/main.c
 clean:
 	rm -rf $(OBJDIR)
 	rm -rf $(DOCDIR)
-doc: clean
+rmdoc:
+	rm -rf $(DOCDIR)
+doc: rmdoc
 	doxygen
 test:
 	cd ./tests && make $(MAKE)

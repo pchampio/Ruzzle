@@ -86,6 +86,17 @@
 *
 * \image html "../../imgs/gdb2.png"
 * Pour régler ce problème, nous avons insérer "sub_char_to_str(str);" en fin de fonction.
+
+* \subsection step8 Tests unitaires
+* Les tests unitaires on pour but de vérifier si les axiomes des différents modules sont fonctionnelle.\n
+* Pour les consevoir, nous avons utilisé le framework CU http://cu.danfis.cz/tutorial. Il s'agit d'une bibliothèque destinée à faciliter l'écriture et l'execution des test initaires en C.\n
+* Ainsi, nous avont développer un test pour la fonction recherche_dictio.c.\n
+* Ce test à, de ce fait, pu montrer que la fonction marche correctement car lors de l'exécution de test unitaires tout les mots du fichier data/words.txt sont retrouver dans l'arbre.\n
+* \image html "../../imgs/test.png"
+* Le programme de test viendra aussi lire le fichier <a href="../../data/test.txt">./data/test.txt</a> où, l'on peut rentrer des mots à tester dans l'arbre, par exemple le mot "dfjkl" n'est pas trouver dans le dico, on peut donc voire que l'une assertations à fail.\n
+* \image html "../../imgs/test_f.png"
+* le programme imprime les mots non présent dans l'arbre dans le fichier <a href="../../tests/regressions/tmp.T1.err">./tests/regressions/tmp.T1.err</a>, pour un débogage plus rapide.
+
 */
 
 /**
