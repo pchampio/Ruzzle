@@ -5,6 +5,7 @@ FLAG=-Wall -g
 DOCDIR=./doc
 OBJDIR=./bin
 
+MAKE=-f makefile
 
 ifndef size
 SIZE=-DN=4
@@ -26,5 +27,9 @@ main.o: $(OBJDIR)/main.c
 clean:
 	rm -rf $(OBJDIR)
 	rm -rf $(DOCDIR)
-doc:
+doc: clean
 	doxygen
+test:
+	cd ./tests && make $(MAKE)
+test_clean:
+	cd ./tests && make $(MAKE) clean
