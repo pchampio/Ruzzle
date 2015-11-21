@@ -82,7 +82,8 @@
 * la création d'un mot "infini" (Le retour en arrière sur le chemin ne s'effectue pas). Voici les images de notre gdb nous affichant cette erreur.
 * \image html "../../imgs/gdb1.png"
 * Nous avons inséré un breakpoint au niveau de la fonction findWordsUtil pour pouvoir rentrer dans la fonction.
-* Nous lançons le programme avec un run. Puis un display str qui nous affiche la valeur de str. Au début, il n'y a pas de problème. Puis, on s'aperçoit qu'il faut enlever un caractère à la sortie de la fonction.
+* Nous lançons le programme avec un run. Puis un display str qui nous affiche la valeur de str. Au début, il n'y a pas de problème. Puis,
+* on s'aperçoit qu'il faut enlever un caractère à la sortie de la fonction.
 *
 * \image html "../../imgs/gdb2.png"
 * Pour régler ce problème, nous avons insérer "sub_char_to_str(str);" en fin de fonction.
@@ -93,10 +94,21 @@
 * Ainsi, nous avont développer un test pour la fonction recherche_dictio.c.\n
 * Ce test à, de ce fait, pu montrer que la fonction marche correctement car lors de l'exécution de test unitaires tout les mots du fichier data/words.txt sont retrouver dans l'arbre.\n
 * \image html "../../imgs/test.png"
-* Le programme de test viendra aussi lire le fichier <a href="../../data/test.txt">./data/test.txt</a> où, l'on peut rentrer des mots à tester dans l'arbre, par exemple le mot "dfjkl" n'est pas trouver dans le dico, on peut donc voire que l'une assertations à fail.\n
+* Le programme de test viendra aussi lire le fichier <a href="../../data/test.txt">./data/test.txt</a> où, l'on peut rentrer des mots à tester dans l'arbre,
+ par exemple le mot "dfjkl" n'est pas trouver dans le dico, on peut donc voire que l'une assertations à fail.\n
 * \image html "../../imgs/test_f.png"
 * le programme imprime les mots non présent dans l'arbre dans le fichier <a href="../../tests/regressions/tmp.T1.err">./tests/regressions/tmp.T1.err</a>, pour un débogage plus rapide.
 
+* \section install_sec4 Conclusion
+* Au terme de ces semaines de travail sur ce projet, nous somme satisfaits que notre projet ait aboutit.\n
+* Il est fonctionnelle cependant toutes les contrainte du jeux n'on pas été réaliser comme le tris des point des mots, ou les lettre compte double/triple.
+* ses fonction n'on pas été réaliser par manque de temps, et de plus le but de ce module est l'utilisation des outils autour de la programmation.\n
+* A contrario, lors du développement de notre solution à ce problème nous nous somme rendu compte que notre programe pouvais fonctionner avec des matrice bien plus grande que 4x4,
+* ce qui veut dire que notre programme est adaptatif, touts le monde ne peut pas le revendiquer.\n
+* Il faut ajouter à la réussite de notre projet que sont élaboration nous a permis d'apprendre et de mettre en place différentes composantes de la réalistion d'ub projet d'algorithmique.
+* Qui sont essentielles à un bon programmeur.\n\n
+*
+* test
 */
 
 /**
