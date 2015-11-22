@@ -7,6 +7,7 @@
 #include "../include/gener_grille.h"
 #include "../include/recherche_dictio.h"
 #include "../include/recherche_grille.h"
+
 /*! \mainpage My Personal Index Page
 *
 * \section intro_sec Introduction
@@ -76,6 +77,12 @@
 * il simplifie énormément les calculs pour une grande grille.\n
 * Par exemple pour une matrice 4x4, le nombre de recherche dans le dictionnaire est environ de 2000.
 *
+* \section install_sec4 Conclusion
+*
+*Au terme de ces semaines de travail sur ce projet, nous sommes satisfaits que notre projet ait abouti.\n
+*Il est fonctionnel cependant toutes les contraintes du jeux n'ont pas été réalisée comme le tri des points des mots ou les lettres comptants double/triple.
+*Ces fonctions n'ont pas été réalisées par manque de temps.
+*De plus le but de ce module et donc de ce projet est la manipulation et l'utilisation des outils autour de la programmation.
 */
 
 /**
@@ -86,9 +93,6 @@
  * \fn int main (void)
  * \brief fait appel aux différentes fonctions
  * \return Renvoie un entier, nul si aucune erreur n'est arrivée, autre chose sinon
-
-
-
 
 */
 
