@@ -84,8 +84,7 @@
 *Il est fonctionnel cependant toutes les contraintes du jeux n'ont pas été réalisée comme le tri des points des mots ou les lettres comptants double/triple.
 *Ces fonctions n'ont pas été réalisées par manque de temps.
 *De plus le but de ce module et donc de ce projet est la manipulation et l'utilisation des outils autour de la programmation.
-*/
-=======
+*
 * \subsection step7 Débogage
 * Pour le débogage, supposons qu'une erreur est présente dans la fonction findWordsUtil présent dans le module recherche_grille.
 * Suite à cette erreur le backtracking ne s'effectue pas, et nous avons donc
