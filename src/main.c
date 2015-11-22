@@ -116,7 +116,7 @@
 * Ces fonctions n'ont pas été réalisées par manque de temps et de plus le but de ce module est l'utilisation des outils autour de la programmation.\n
 * A contrario, lors du développement de notre solution à ce problème nous nous sommes rendus compte que notre programme pouvait fonctionner avec des matrices bien plus grande que 4x4,
 * ce qui veut dire que notre programme est adaptatif. \n
-* Il faut ajouter à la réussite de notre projet que son élaboration nous a permi d'apprendre et de mettre en place différentes composantes de la réalisation d'un projet d'algorithmique ce
+* Il faut ajouter à la réussite de notre projet que son élaboration nous a permis d'apprendre et de mettre en place différentes composantes de la réalisation d'un projet d'algorithmique ce
 * qui est essentiel à un bon programmeur.\n\n
 *
 * Ce projet est le premier que nous effectuons dans le langage C. C'est aussi grace à ce projet que nous nous sommes familiarisés avec les "Makefile"
