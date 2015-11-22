@@ -18,10 +18,10 @@ $ make
 
 
 	Le parametre size= permet de choisir la taille de la grille
-	Par exemple pour une grille de 3*3 : (par defaut size=4)
+	Par exemple pour une grille de 20*20 : (par defaut size=4)
 	(Si la valeur 1 est indquée la grille sera de taille 4*4)
 ```
-$ make size=3
+$ make size=20
 ```
 
 
