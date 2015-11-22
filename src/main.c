@@ -112,7 +112,7 @@
 
 * \section install_sec4 Conclusion
 * Au terme de ces semaines de travail sur ce projet, nous somme satisfaits que notre projet ait aboutit.\n
-* Il est fonctionnelle cependant toutes les contrainte du jeux n'ont pas été réaliséew comme le tri des points des mots ou les lettres comptent double/triple.
+* Il est fonctionnelle cependant toutes les contrainte du jeux n'ont pas été réalisée comme le tri des points des mots ou les lettres comptent double/triple.
 * Ces fonctions n'ont pas été réalisées par manque de temps et de plus le but de ce module est l'utilisation des outils autour de la programmation.\n
 * A contrario, lors du développement de notre solution à ce problème nous nous sommes rendus compte que notre programme pouvait fonctionner avec des matrices bien plus grande que 4x4,
 * ce qui veut dire que notre programme est adaptatif. \n
