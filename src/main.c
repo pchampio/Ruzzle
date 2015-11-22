@@ -119,12 +119,12 @@
 * Il faut ajouter à la réussite de notre projet que son élaboration nous a permis d'apprendre et de mettre en place différentes composantes de la réalisation d'un projet d'algorithmique ce
 * qui est essentiel à un bon programmeur.\n\n
 *
-* Ce projet est le premier que nous effectuons dans le langage C. C'est aussi grace à ce projet que nous nous sommes familiarisés avec les "Makefile"
+* Ce projet est le premier que nous effectuons dans le langage C. C'est aussi grace à lui que nous nous sommes familiarisés avec les "Makefile"
 * et sur la façon de structurer les fichiers afin de rendre un contenu propre.\n
 * Il faut également souligner que les connaissances en matière de programmation des différents membres étaient inégales et que ce projet à permis a chacun des membres de bénéficier des connaissances des autres.\n\n
 * En ce qui concerne le caractère collaboratif, nous avont fortement utiliser GITHUB, avec un total de plus de 120 commit. 
-* Cet outil de versioning à été essentiel pour que nous soyons le plus efficace possible dans le travail de groupe.
-* Notre travail donc ouvert à tous et il se trouve que notre page github sur le ruzzle à plus de 700 vues.\n\n
+* Cet outil de versioning à été essentiel pour que nous soyons le plus efficace possible dans notre travail de groupe.
+* Notre programme est donc ouvert à tous et il se trouve que notre page github sur le ruzzle compte plus de 700 vues.\n\n
 *
 * Pour finir, nous avons utiliser Doxygen pour la mise en place de la documentation, l'apprentissage de sa syntaxe est nécessaire pour présenter des projets.\n
 * Champion Pierre / Mok Modira / Laville Martin
