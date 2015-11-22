@@ -77,15 +77,7 @@
 * il simplifie énormément les calculs pour une grande grille.\n
 * Par exemple pour une matrice 4x4, le nombre de recherche dans le dictionnaire est environ de 2000.
 *
-<<<<<<< HEAD
-* \section install_sec4 Conclusion
 *
-*Au terme de ces semaines de travail sur ce projet, nous sommes satisfaits que notre projet ait abouti.\n
-*Il est fonctionnel cependant toutes les contraintes du jeux n'ont pas été réalisée comme le tri des points des mots ou les lettres comptants double/triple.
-*Ces fonctions n'ont pas été réalisées par manque de temps.
-*De plus le but de ce module et donc de ce projet est la manipulation et l'utilisation des outils autour de la programmation.
-*/
-=======
 * \subsection step7 Débogage
 * Pour le débogage, supposons qu'une erreur est présente dans la fonction findWordsUtil présent dans le module recherche_grille.
 * Suite à cette erreur le backtracking ne s'effectue pas, et nous avons donc
@@ -97,7 +89,6 @@
 *
 * \image html "../../imgs/gdb2.png"
 * Pour régler ce problème, nous avons insérer "sub_char_to_str(str);" en fin de fonction.
-
 * \subsection step8 Tests unitaires
 * Les tests unitaires on pour but de vérifier si les axiomes des différents modules sont fonctionnelle.\n
 * Pour les consevoir, nous avons utilisé le framework CU http://cu.danfis.cz/tutorial. Il s'agit d'une bibliothèque destinée à faciliter l'écriture et l'execution des test initaires en C.\n
@@ -108,24 +99,26 @@
  par exemple le mot "dfjkl" n'est pas trouver dans le dico, on peut donc voire que l'une assertations à fail.\n
 * \image html "../../imgs/test_f.png"
 * le programme imprime les mots non présent dans l'arbre dans le fichier <a href="../../tests/regressions/tmp.T1.err">./tests/regressions/tmp.T1.err</a>, pour un débogage plus rapide.
->>>>>>> 151eb78d4fbbd12e7a2ddc6adb1daaef3f2a9438
 
 * \section install_sec4 Conclusion
-* Au terme de ces semaines de travail sur ce projet, nous somme satisfaits que notre projet ait aboutit.\n
-* Il est fonctionnelle cependant toutes les contrainte du jeux n'on pas été réaliser comme le tris des point des mots, ou les lettre compte double/triple.
-* ses fonction n'on pas été réaliser par manque de temps, et de plus le but de ce module est l'utilisation des outils autour de la programmation.\n
-* A contrario, lors du développement de notre solution à ce problème nous nous somme rendu compte que notre programe pouvais fonctionner avec des matrice bien plus grande que 4x4,
-* ce qui veut dire que notre programme est adaptatif, touts le monde ne peut pas le revendiquer.\n
-* Il faut ajouter à la réussite de notre projet que sont élaboration nous a permis d'apprendre et de mettre en place différentes composantes de la réalistion d'ub projet d'algorithmique.
-* Qui sont essentielles à un bon programmeur.\n\n
 *
-* Ce projet est le premier que nous effectuons dans le langage C. C'est aussi grace a ce projet que nous nous somme familiariser avec les "Makefile"
-* et la façcon de structurer les fichier afin de rendre un contenu propre.\n
+*Au terme de ces semaines de travail sur ce projet, nous sommes satisfaits que notre projet ait abouti.\n
+*Il est fonctionnel cependant toutes les contraintes du jeux n'ont pas été réalisée comme le tri des points des mots ou les lettres comptants double/triple.
+*Ces fonctions n'ont pas été réalisées par manque de temps.
+*De plus le but de ce module et donc de ce projet est la manipulation et l'utilisation des outils autour de la programmation.
+* A contrario, lors du développement de notre solution à ce problème nous nous sommes rendus compte que notre programme pouvait fonctionner avec des matrices bien plus grande que 4x4,
+* ce qui veut dire que notre programme est adaptatif. \n
+* Il faut ajouter à la réussite de notre projet que son élaboration nous a permis d'apprendre et de mettre en place différentes composantes de la réalisation d'un projet d'algorithmique ce
+* qui est essentiel à un bon programmeur.\n\n
+*
+* Ce projet est le premier que nous effectuons dans le langage C. C'est aussi grace à lui que nous nous sommes familiarisés avec les "Makefile"
+* et sur la façon de structurer les fichiers afin de rendre un contenu propre.\n
 * Il faut également souligner que les connaissances en matière de programmation des différents membres étaient inégales et que ce projet à permis a chacun des membres de bénéficier des connaissances des autres.\n\n
-* En ce qui concerne le caractère collaboratif, nous avont fortement utiliser GITHUB, avec un total de plus de 120 commit, cette outils de versioning à été abuser,
-* dans le but d'étre encore plus éficase dans le travail de groupe. Notre travail donc ouvert à tous et il ce trouve que notre page github sur le ruzzle à plus de 700vues.\n\n
+* En ce qui concerne le caractère collaboratif, nous avont fortement utiliser GITHUB, avec un total de plus de 120 commit.
+* Cet outil de versioning à été essentiel pour que nous soyons le plus efficace possible dans notre travail de groupe.
+* Notre programme est donc ouvert à tous et il se trouve que notre page github sur le ruzzle compte plus de 700 vues.\n\n
 *
-* Pour finir, nous avons utiliser Doxygen pour la mise en place de la documentation, l'apprentissage de ça syntaxe est nécessaire pour présenter des projets.\n
+* Pour finir, nous avons utiliser Doxygen pour la mise en place de la documentation, l'apprentissage de sa syntaxe est nécessaire pour présenter des projets.\n
 * Champion Pierre / Mok Modira / Laville Martin
 */
 /**1
