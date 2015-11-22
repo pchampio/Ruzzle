@@ -18,32 +18,48 @@ mais il n’est pas permis de réutiliser deux fois la même case.</p>
 
 <h1 id="release-1">Release - 1</h1>
 
+
+
 <h2 id="instructions-de-compilation">Instructions de compilation</h2>
+
+
 
 <h3 id="solver">Solver</h3>
 
 <p>Pour compiler l’ensemble des sources :</p>
 
+
+
 <pre class="prettyprint"><code class=" hljs ruby"><span class="hljs-variable">$ </span>make</code></pre>
 
-<p>l’exécutable généré peut être retrouvé dans <strong>./bin</strong></p>
+<p>L’exécutable généré peut être retrouvé dans <strong>./bin</strong></p>
 
-<pre><code>Le parametre size= permet de choisir la taille de la grille
+<pre><code>Le paramètre size= permet de choisir la taille de la grille
 Par exemple pour une grille de 20*20 : (par defaut size=4)
-(Si la valeur 1 est indquée la grille sera de taille 4*4)
+(Si la valeur 1 est indiquée la grille sera de taille 4*4)
 </code></pre>
+
+
 
 <pre class="prettyprint"><code class=" hljs fix"><span class="hljs-attribute">$ make size</span>=<span class="hljs-string">20</span></code></pre>
 
 <p>Pour exécuter le programme :</p>
 
+
+
 <pre class="prettyprint"><code class=" hljs ruby"><span class="hljs-variable">$ </span>time bin\main.exe</code></pre>
+
+
 
 <h3 id="documentation">Documentation</h3>
 
+
+
 <pre class="prettyprint"><code class=" hljs ruby"><span class="hljs-variable">$ </span>make doc</code></pre>
 
-<p>La documentation <strong>accompagner de notre rapport</strong>  généré peut être retrouvé dans <strong>./doc/html/index.html</strong></p>
+<p>La documentation <strong>accompagnée de notre rapport</strong>  générée peut être retrouvée dans <strong>./doc/html/index.html</strong></p>
+
+
 
 <h3 id="nettoyage">Nettoyage</h3>
 
@@ -51,8 +67,10 @@ Par exemple pour une grille de 20*20 : (par defaut size=4)
 
 <pre class="prettyprint"><code class=" hljs ruby"><span class="hljs-variable">$ </span>make clean</code></pre>
 
-<p>Supprime les ficher due a la création de l’exécutable, et l’exécutable. <br>
-La documentation est elle aussi supprimer. </p>
+<p>Supprime les fichiers dus a la création de l’exécutable, et l’exécutable. <br>
+La documentation est elle aussi supprimée.</p>
+
+
 
 <h2 id="test-unitaire">Test Unitaire</h2>
 
@@ -60,25 +78,31 @@ La documentation est elle aussi supprimer. </p>
 
 <h3 id="exécution">Exécution</h3>
 
+
+
 <pre class="prettyprint"><code class=" hljs ruby"><span class="hljs-variable">$ </span>make test</code></pre>
 
-<p>Les tests unitaires sont généré, l’exécutable des test est <strong>./tests/test</strong></p>
+<p>Les tests unitaires sont générés, l’exécutable des test est <strong>./tests/test</strong></p>
 
 <blockquote>
-  <p>Les mots <strong>non trouver</strong> sont placée dans <strong>./tests/regressions/tmp.T1.err</strong> <br>
-  Les mots qui serons rechercher sont ceux du dictionnaire et ceux du ficher <strong>./data/test.txt</strong></p>
+  <p>Les mots <strong>non trouvés</strong> sont placés dans <strong>./tests/regressions/tmp.T1.err</strong> <br>
+  Les mots qui seront recherchés sont ceux du dictionnaire et ceux du ficher <strong>./data/test.txt</strong></p>
 </blockquote>
 
 <p>Pour exécuter les tests:</p>
 
+
+
 <pre class="prettyprint"><code class=" hljs bash">$ <span class="hljs-built_in">cd</span> tests &amp;&amp; ./test
 
 (si -bash: ./test: Permission denied)
-$ <span class="hljs-built_in">cd</span> tests &amp;&amp; <span class="hljs-built_in">sudo</span> ./test </code></pre>
+$ <span class="hljs-built_in">sudo</span> ./test</code></pre>
 
-<p>Pour afficher les mots non trouver dans l’arbre </p>
+<p>Pour afficher les mots non trouvés dans l’arbre</p>
 
 <pre class="prettyprint"><code class=" hljs avrasm">$ cat regressions/tmp<span class="hljs-preprocessor">.T</span>1<span class="hljs-preprocessor">.err</span></code></pre>
+
+
 
 <h3 id="nettoyage-des-tests">Nettoyage des tests</h3>
 
@@ -86,5 +110,5 @@ $ <span class="hljs-built_in">cd</span> tests &amp;&amp; <span class="hljs-built
 
 <pre class="prettyprint"><code class=" hljs ruby"><span class="hljs-variable">$ </span>make test_clean (dans le répertoire ./<span class="hljs-constant">Ruzzle</span>)</code></pre>
 
-<p>Supprime les ficher due a la création de l’exécutable de test, et l’exécutable test.</p></div></body>
+<p>Supprime les fichier dus à la création de l’exécutable de test, et l’exécutable test.</p></div></body>
 </html>

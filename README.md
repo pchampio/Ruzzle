@@ -57,7 +57,7 @@ Pour exécuter les tests:
 $ cd tests && ./test
 
 (si -bash: ./test: Permission denied)
-$ cd tests && sudo ./test
+$ sudo ./test
 ```
 
 Pour afficher les mots non trouvés dans l'arbre
@@ -68,4 +68,4 @@ $ cat regressions/tmp.T1.err
 ```
 $ make test_clean (dans le répertoire ./Ruzzle)
 ```
- Supprime les ficher dus a la création de l'exécutable de test, et l'exécutable test.
+ Supprime les fichier dus à la création de l'exécutable de test, et l'exécutable test.
