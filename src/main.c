@@ -107,14 +107,14 @@
 * 2) A l'aide du module gener_grille, nous remplissons la grille avec des lettres de l'alphabet, proportionnellement à leur fréquence d'apparitions dans la vie courante. Nous ne pouvons donc avoir une grille
 * remplie de consonnes, ce qui aura pour conséquence une grille avec très peu de mots, donc généralement non intéressante. \n
 * 3) Nous affichons tout simplement la grille. \n
-* 4) Ensuite, à l'aide du module recherche_dictio, nous allons créer un dictionnaire optimisé où la recherche des mots est optimisée. \n
-* 5) Par la suite, nous trouvons toutes les combinaisons possibles des lettres possible qui forment un mot. Chaque mot trouvé est affiché, avec les points correspondant à ce mot. \n
+* 4) Ensuite, à l'aide du module recherche_dictio, nous allons créer un dictionnaire où la recherche des mots est optimisée. \n
+* 5) Par la suite, nous trouvons toutes les combinaisons possibles de lettres possible qui forment un mot. Chaque mot trouvé est affiché, avec les points correspondant à ce mot. \n
 * 6) Pour finir, nous affichons une nouvelle fois la grille, pour que l'utilisateur se repère plus facilement. \n
 *
 * \section install_sec4 Conclusion
 *
 *Au terme de ces semaines de travail sur ce projet, nous sommes satisfaits que notre projet ait abouti.\n
-*Il est fonctionnel cependant toutes les contraintes du jeux n'ont pas été réalisée comme le tri des points des mots ou les lettres comptants double/triple.
+*Le programme est fonctionnel cependant toutes les contraintes du jeu n'ont pas été réalisées, comme le tri des points des mots ou les lettres comptants double/triple.
 *Ces fonctions n'ont pas été réalisées par manque de temps.
 *De plus le but de ce module et donc de ce projet est la manipulation et l'utilisation des outils autour de la programmation.
 * A contrario, lors du développement de notre solution à ce problème nous nous sommes rendus compte que notre programme pouvait fonctionner avec des matrices bien plus grande que 4x4,
@@ -122,14 +122,14 @@
 * Il faut ajouter à la réussite de notre projet que son élaboration nous a permis d'apprendre et de mettre en place différentes composantes de la réalisation d'un projet d'algorithmique ce
 * qui est essentiel à un bon programmeur.\n\n
 *
-* Ce projet est le premier que nous effectuons dans le langage C. C'est aussi grace à lui que nous nous sommes familiarisés avec les "Makefile"
+* Ce projet est le premier que nous effectuons dans le langage C. C'est aussi grâce à lui que nous nous sommes familiarisés avec les "Makefile"
 * et sur la façon de structurer les fichiers afin de rendre un contenu propre.\n
 * Il faut également souligner que les connaissances en matière de programmation des différents membres étaient inégales et que ce projet à permis a chacun des membres de bénéficier des connaissances des autres.\n\n
-* En ce qui concerne le caractère collaboratif, nous avont fortement utiliser GITHUB, avec un total de plus de 120 commit.
+* En ce qui concerne le caractère collaboratif, nous avons fortement utilisé GITHUB, avec un total de plus de 120 commit.
 * Cet outil de versioning à été essentiel pour que nous soyons le plus efficace possible dans notre travail de groupe.
 * Notre programme est donc ouvert à tous et il se trouve que notre page github sur le ruzzle compte plus de 700 vues.\n\n
 *
-* Pour finir, nous avons utiliser Doxygen pour la mise en place de la documentation, l'apprentissage de sa syntaxe est nécessaire pour présenter des projets.\n
+* Pour finir, nous avons utilisé Doxygen pour la mise en place de la documentation, l'apprentissage de sa syntaxe est nécessaire pour présenter des projets.\n
 * Champion Pierre / Mok Modira / Laville Martin
 */
 /**1
