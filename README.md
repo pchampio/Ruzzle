@@ -13,13 +13,13 @@ Pour compiler l'ensemble des sources :
 ```
 $ make
 ```
- l'exécutable généré peut être retrouvé dans **./bin**
+ L'exécutable généré peut être retrouvé dans **./bin**
 
 
 
-	Le parametre size= permet de choisir la taille de la grille
+	Le paramètre size= permet de choisir la taille de la grille
 	Par exemple pour une grille de 20*20 : (par defaut size=4)
-	(Si la valeur 1 est indquée la grille sera de taille 4*4)
+	(Si la valeur 1 est indiquée la grille sera de taille 4*4)
 ```
 $ make size=20
 ```
@@ -34,22 +34,22 @@ $ time bin\main.exe
 ```
 $ make doc
 ```
-La documentation **accompagner de notre rapport**  généré peut être retrouvé dans **./doc/html/index.html**
+La documentation **accompagnée de notre rapport**  générée peut être retrouvée dans **./doc/html/index.html**
 ### Nettoyage
 ```
 $ make clean
 ```
- Supprime les ficher due a la création de l'exécutable, et l'exécutable.
-La documentation est elle aussi supprimer.
+ Supprime les fichiers dus a la création de l'exécutable, et l'exécutable.
+La documentation est elle aussi supprimée.
 
 ## Test Unitaire
 ### Exécution
 ```
 $ make test
 ```
-Les tests unitaires sont généré, l'exécutable des test est **./tests/test**
->Les mots **non trouver** sont placée dans **./tests/regressions/tmp.T1.err**
->Les mots qui serons rechercher sont ceux du dictionnaire et ceux du ficher **./data/test.txt**
+Les tests unitaires sont générés, l'exécutable des test est **./tests/test**
+>Les mots **non trouvés** sont placés dans **./tests/regressions/tmp.T1.err**
+>Les mots qui seront recherchés sont ceux du dictionnaire et ceux du ficher **./data/test.txt**
 
 Pour exécuter les tests:
 
@@ -60,7 +60,7 @@ $ cd tests && ./test
 $ cd tests && sudo ./test
 ```
 
-Pour afficher les mots non trouver dans l'arbre
+Pour afficher les mots non trouvés dans l'arbre
 ```
 $ cat regressions/tmp.T1.err
 ```
@@ -68,4 +68,4 @@ $ cat regressions/tmp.T1.err
 ```
 $ make test_clean (dans le répertoire ./Ruzzle)
 ```
- Supprime les ficher due a la création de l'exécutable de test, et l'exécutable test.
+ Supprime les ficher dus a la création de l'exécutable de test, et l'exécutable test.
