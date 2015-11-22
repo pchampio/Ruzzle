@@ -89,17 +89,28 @@
 *
 * \image html "../../imgs/gdb2.png"
 * Pour régler ce problème, nous avons insérer "sub_char_to_str(str);" en fin de fonction.
+*
+*
 * \subsection step8 Tests unitaires
-* Les tests unitaires on pour but de vérifier si les axiomes des différents modules sont fonctionnelle.\n
-* Pour les consevoir, nous avons utilisé le framework CU http://cu.danfis.cz/tutorial. Il s'agit d'une bibliothèque destinée à faciliter l'écriture et l'execution des test initaires en C.\n
-* Ainsi, nous avont développer un test pour la fonction recherche_dictio.c.\n
-* Ce test à, de ce fait, pu montrer que la fonction marche correctement car lors de l'exécution de test unitaires tout les mots du fichier data/words.txt sont retrouver dans l'arbre.\n
+* Les tests unitaires ont pour but de vérifier si les axiomes des différents modules sont fonctionnelles.\n
+* Pour les concevoir, nous avons utilisé le framework CU http://cu.danfis.cz/tutorial. Il s'agit d'une bibliothèque destinée à faciliter l'écriture et l'éxécution des tests unitaires en C.\n
+* Ainsi, nous avons développé un test pour la fonction recherche_dictio.c.\n
+* Ce test à, de ce fait, pu montrer que la fonction marche correctement car lors de l'exécution des test unitaires tous les mots du fichier data/words.txt sont retrouvés dans l'arbre.\n
 * \image html "../../imgs/test.png"
 * Le programme de test viendra aussi lire le fichier <a href="../../data/test.txt">./data/test.txt</a> où, l'on peut rentrer des mots à tester dans l'arbre,
- par exemple le mot "dfjkl" n'est pas trouver dans le dico, on peut donc voire que l'une assertations à fail.\n
+ par exemple le mot "dfjkl" n'est pas trouvé dans le dico, on peut donc voir que l'une des assertations à échouée.\n
 * \image html "../../imgs/test_f.png"
-* le programme imprime les mots non présent dans l'arbre dans le fichier <a href="../../tests/regressions/tmp.T1.err">./tests/regressions/tmp.T1.err</a>, pour un débogage plus rapide.
-
+* le programme imprime les mots non présents dans l'arbre dans le fichier <a href="../../tests/regressions/tmp.T1.err">./tests/regressions/tmp.T1.err</a>, pour un débogage plus rapide.
+*
+* \subsection step9 Explication du programme
+* 1) Nous générons une grille de taille NxN vide. \n
+* 2) A l'aide du module gener_grille, nous remplissons la grille avec des lettres de l'alphabet, proportionnellement à leur fréquence d'apparitions dans la vie courante. Nous ne pouvons donc avoir une grille
+* remplie de consonnes, ce qui aura pour conséquence une grille avec très peu de mots, donc généralement non intéressante. \n
+* 3) Nous affichons tout simplement la grille. \n
+* 4) Ensuite, à l'aide du module recherche_dictio, nous allons créer un dictionnaire optimisé où la recherche des mots est optimisée. \n
+* 5) Par la suite, nous trouvons toutes les combinaisons possibles des lettres possible qui forment un mot. Chaque mot trouvé est affiché, avec les points correspondant à ce mot. \n
+* 6) Pour finir, nous affichons une nouvelle fois la grille, pour que l'utilisateur se repère plus facilement. \n
+*
 * \section install_sec4 Conclusion
 *
 *Au terme de ces semaines de travail sur ce projet, nous sommes satisfaits que notre projet ait abouti.\n
