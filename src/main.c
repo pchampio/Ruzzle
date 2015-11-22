@@ -112,20 +112,21 @@
 
 * \section install_sec4 Conclusion
 * Au terme de ces semaines de travail sur ce projet, nous somme satisfaits que notre projet ait aboutit.\n
-* Il est fonctionnelle cependant toutes les contrainte du jeux n'on pas été réaliser comme le tris des point des mots, ou les lettre compte double/triple.
-* ses fonction n'on pas été réaliser par manque de temps, et de plus le but de ce module est l'utilisation des outils autour de la programmation.\n
-* A contrario, lors du développement de notre solution à ce problème nous nous somme rendu compte que notre programe pouvais fonctionner avec des matrice bien plus grande que 4x4,
-* ce qui veut dire que notre programme est adaptatif, touts le monde ne peut pas le revendiquer.\n
-* Il faut ajouter à la réussite de notre projet que sont élaboration nous a permis d'apprendre et de mettre en place différentes composantes de la réalistion d'ub projet d'algorithmique.
-* Qui sont essentielles à un bon programmeur.\n\n
+* Il est fonctionnelle cependant toutes les contrainte du jeux n'ont pas été réaliséew comme le tri des points des mots ou les lettres comptent double/triple.
+* Ces fonctions n'ont pas été réalisées par manque de temps et de plus le but de ce module est l'utilisation des outils autour de la programmation.\n
+* A contrario, lors du développement de notre solution à ce problème nous nous sommes rendus compte que notre programme pouvait fonctionner avec des matrices bien plus grande que 4x4,
+* ce qui veut dire que notre programme est adaptatif. \n
+* Il faut ajouter à la réussite de notre projet que son élaboration nous a permi d'apprendre et de mettre en place différentes composantes de la réalisation d'un projet d'algorithmique ce
+* qui est essentiel à un bon programmeur.\n\n
 *
-* Ce projet est le premier que nous effectuons dans le langage C. C'est aussi grace a ce projet que nous nous somme familiariser avec les "Makefile"
-* et la façcon de structurer les fichier afin de rendre un contenu propre.\n
+* Ce projet est le premier que nous effectuons dans le langage C. C'est aussi grace à ce projet que nous nous sommes familiarisés avec les "Makefile"
+* et sur la façon de structurer les fichiers afin de rendre un contenu propre.\n
 * Il faut également souligner que les connaissances en matière de programmation des différents membres étaient inégales et que ce projet à permis a chacun des membres de bénéficier des connaissances des autres.\n\n
-* En ce qui concerne le caractère collaboratif, nous avont fortement utiliser GITHUB, avec un total de plus de 120 commit, cette outils de versioning à été abuser,
-* dans le but d'étre encore plus éficase dans le travail de groupe. Notre travail donc ouvert à tous et il ce trouve que notre page github sur le ruzzle à plus de 700vues.\n\n
+* En ce qui concerne le caractère collaboratif, nous avont fortement utiliser GITHUB, avec un total de plus de 120 commit. 
+* Cet outil de versioning à été essentiel pour que nous soyons le plus efficace possible dans le travail de groupe.
+* Notre travail donc ouvert à tous et il se trouve que notre page github sur le ruzzle à plus de 700 vues.\n\n
 *
-* Pour finir, nous avons utiliser Doxygen pour la mise en place de la documentation, l'apprentissage de ça syntaxe est nécessaire pour présenter des projets.\n
+* Pour finir, nous avons utiliser Doxygen pour la mise en place de la documentation, l'apprentissage de sa syntaxe est nécessaire pour présenter des projets.\n
 * Champion Pierre / Mok Modira / Laville Martin
 */
 /**1
