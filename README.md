@@ -1,5 +1,6 @@
-Ruzzle
+Ruzzle  [![Build Status](https://travis-ci.org/Drakirus/Ruzzle.svg)](https://travis-ci.org/Drakirus/Ruzzle)
 ==
+
 Le Ruzzle est un jeu originaire du monde mobile, ce jeu consiste à former le plus de mots en un temps imparti à partir
 d'une grille de lettres générée aléatoirement.
 Le but étant de marquer le plus de points possible pour celà des bonus lettre et mot double/triple sont répartis sur la grille
