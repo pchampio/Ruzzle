@@ -8,7 +8,6 @@ language: C
 # Try using multiple Lua Implementations
 env:
   - TOOL="gcc"                  # Use native compiler (GCC usually)
-  - TOOL="clang"                # Use clang
 
 # Install dependencies
 install:
