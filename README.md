@@ -75,4 +75,3 @@ $ make test_clean (dans le répertoire ./Ruzzle)
 
 
  https://github.com/Drakirus/Ruzzle
- 
