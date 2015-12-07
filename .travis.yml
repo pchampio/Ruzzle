@@ -17,6 +17,7 @@ install:
 # Build the module
 script:
   - make
+  - make test
   
 # Only watch the master branch
 branches:
