@@ -105,3 +105,4 @@ void findWords(char mat[N][N]){
 	}
 
 }
+ 
