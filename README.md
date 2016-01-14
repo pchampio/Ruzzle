@@ -71,6 +71,10 @@ $ make test_clean (dans le répertoire ./Ruzzle)
 ```
  Supprime les fichier dus à la création de l'exécutable de test, et l'exécutable test.
 
+## Screen
+
+Exemple :
+![ruzzle](imgs/ruzzle.gif)
 
 ### Lien Github
 
